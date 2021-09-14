@@ -3,60 +3,139 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" <link rel="stylesheet"
+    href="./assets/css/style.css">
   <title>Marc Malliate's Portfolio</title>
 </head>
 
 <body>
-  <div class="header">
-    <h1>Marc Malliate's <span class="portfolio">Portfolio</span> </h1>
-    <div>
-      <ul>
-        <li>
-          <a href="#about-me">About Me</a>
-        </li>
-        <li>
-          <a href="#my-work">My Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="hero"></div>
-  <div class="content">
-    <div id="about-me" class="about-me">
-      <img src="./assets/images/About Me.JPG" class="float-left" />
-      <h2>About Me</h2>
-      <p>
-        I am currently studying web development and coding at Adelaide University.
-        I am eager to put my skills into practice and grow my knowledge of this exciting industry.
-        Favourite quote: "Life begins on the edge on your confort zone.""
-        Fun fact: I have travelled to 32 countries.
-      </p>
-    </div>
-    <div id="my-work" class="my-work">
-      <img src="./assets/images/Marketing Mock up.png" class="float-right" />
-      <h2>My Work</h2>
-      <p>
-        This is my work so far...
-      </p>
-    </div>
-    <div id="contact" class="contact">
-      <img src="./assets/images/contact.jpg" class="float-left" />
-      <h2>Contact</h2>
-      <p>
-        Email: marc.malliate@gmail.com
-        Linkedin: https://www.linkedin.com/in/marc-malliate-965b5945/
-      </p>
-    </div>
-  </div>
 
-  <div class="footer">
-    <h2>I look forward to working with you!</h2>
-  </div>
+  <header>
+    <h1> Marc Malliate's Portfolio </h1>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="#aboutme" class="menu-item"> About Me </a>
+    <a href="#mywork" class="menu-item"> My Work So Far </a>
+    <a href="#contactme" class="menu-item"> Contact Me </a>
+
+  </nav>
+  <main>
+
+
+    <div id="aboutme" class="about-me-container">
+
+      <div class="about-me-flex">
+
+        <div class="about-me-image">
+          <img src="assets/images/Main.JPG" class="main-photo" alt="main-photo">
+
+
+        </div>
+        <p>
+          Heya, <br>
+          <br>
+          I'f you're looking for Marc's web-development portfolio then you've come to the right place. <br>
+          <br>
+          <br>
+
+          This is the space where you can check out all the projects I've been working on and learn a little bit more
+          about me.
+          <br>
+          I currently hold a bachelors degree in Business and have studied abroad at Greenwich University in London. I
+          have love travelling and so far I've been lucky enough to visit 32 countries. I'm hoping to reach 50 before my
+          50th birthday.
+          <br>
+          Currently, I'm spending my days expanding my knowledge of web-development and coding at Adelaide University.
+          I'm excited to put my skills into practice. <br>
+          Before you check out the rest of my portfolio, I'll leave you with my favourite quote...<br>
+          <br>
+          "Life begins at the edge of your comfort zone."
+          <br>
+
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <div id="mywork" class="my-work-container">
+      <h2> My Work </h2>
+      <div class="horiseon-flex">
+        <h5> This is the first project I have worked on. </h5>
+        <section class="image-holder">
+          <h6> Debugging the Horiseon webpage. </h6>
+          <div class="horiseon-image">
+
+            <a href="https://github.com/marcmalliate/Horiseon-Website-Mockup">
+              <img src="assets/images/Marketing Mock up.png" class="horiseon-image"> </a>
+          </div>
+          <p> This project was to debug existing code to ensure the web page functioned effectively as well as clean up
+            the CSS code where necessary.</p>
+
+        </section>
+
+      </div>
+    </div>
+
+
+
+    <section class="coming-soon-container">
+      <div class="coming-soon">
+        <section class="empty-place">
+          <h3> My Next Project </h3>
+          <a <img src="assets/images/coming-soon.jpeg" class="coming-soon-image"> </a>
+          <p> Come back soon and you'll see my second project here.</p>
+        </section>
+        <section class="empty-place">
+          <h3> My Next Next Project </h3>
+          <a <img src="assets/images/coming-soon.jpeg" class="coming-soon-image"> </a>
+          <p> Come back a third time and you find might find another project here. </p>
+        </section>
+
+    </section>
+    </div>
+
+    </section>
+
+
+
+    <div id="contactme" class="contact-me-container">
+      <h4> Contact Me </h4>
+
+      <section class="contact-me-text">
+        Get in touch and lets work on a project together... <br>
+        email - marc.malliate@gmail.com<br>
+        <br>
+        Or connect with me on LinkedIn <br>
+        <div class="contanct-me-link">
+          </a>
+          <a href="https://www.linkedin.com/in/marc-malliate-965b5945/">
+            <img src="assets/images/Linkedin.png" </a>
+
+            <br>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <footer>
+      Thanks for stopping by!
+
+    </footer>
+
+  </main>
+
+
+
+
+
+
 </body>
-
-</html>

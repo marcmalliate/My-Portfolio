@@ -1,147 +1,261 @@
-/* Universal Selector */
-* {
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-/* Element Selector */
+:root {
+  --sunflower:rgb(251, 245, 192);
+  --black: black;
+}
+
 body {
-  background-color: #d9dcd6;
+  line-height: 1.5;
+  background-color: var(--sunflower);
 }
 
-/* Class Selectors */
-.header {
-  padding: 20px;
-  font-family: 'Calibra', 'Lucida Sans Unicode', 'Lucida Sans', Arial, serif;
-  background-color: #ffffff;
-  color: #000000;
+p { 
+  font: 20px;
+  color: var (--black); 
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-.header h1 {
-  display: inline-block;
-  font-size: 80px;
+
+header {
+  padding: 6px;
+  text-align: center;
+  color: var (--black); 
+  font-size: 50px;
+  font-family: Impact, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 
+  display: grid;
+  background-color: sunflower
 }
 
-.header h1 .portfolio {
-  color: #0caa8f;
+h1 {
+  font-weight:lighter;
+  margin-top: 30px;
 }
 
-.header div {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-family: 'Trebuchet MS', 'Gill Sans MT', Calibri, sans-serif;
+
+h2 {
+font-weight: lighter;
+font-family: Impact, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+padding-top: 24px;
+}
+
+h3 {
+  padding: 6px;
+  text-align: left;
+  color: var (--black);  
+  font-size: 20px;
+}
+
+h4 {
+font-weight: lighter;
+font-family: Impact, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+font-size: 50px;
+padding-top: 24px;
+}
+
+h5 {
+  font-weight: lighter;
+  font-family: Impact, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-size: 30px;
+  padding-top: 24px;
+}
+
+h6 {
+  font-weight: lighter;
+  font-family: Impact, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   font-size: 25px;
+  padding-top: 24px;
 }
 
-.header div ul {
-  list-style-type: none;
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  background-color: black;
 }
 
-.header div ul li {
-  display: inline-block;
-  margin-left: 25px;
+nav a {
+  color:sunflower;
+  text-decoration: underline;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: Impact, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  display: flex;
 }
 
-/* Element Selector */
-a {
-  color: #dddcdc;
-  text-decoration: none;
+nav a:hover {
+  color: red;
 }
 
-/* Element Selector */
-p {
+.about-me-flex {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   font-size: 16px;
+  padding-top: 20px;
 }
 
-/* Class Selectors */
-.hero {
-  height: 800px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: <img src=".assets/images/main.jpg";
-  background-size: cover;
-  background-position: center;
+.main-photo {
+  display: flex;
+  width: 300px;
+  margin-left: 50px;
+  border-radius: 10%;
+  border: 2px black solid;
 }
 
-.float-left {
-  float: left;
-  margin-right: 25px;
+.my-work-container {
+  width: 100%; 
+  justify-content: center;
+  text-align: center;
+  color: var (--black); 
+  height: 700px;
+  background-color: rgb(190, 174, 168)
 }
 
-.float-right {
-  float: right;
-  margin-left: 25px;
+@media screen and (max-width: 768px ) {
+  .my-work-container {
+      flex-direction: column;
+  }
+  
 }
 
-.content {
-  width: 100%;
-  display: inline-block;
-  margin: 20px 20px 20px 20px;
-}
-
-.about-me {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.my-work {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.contact {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.about-me img {
-  max-height: 200px;
-}
-
-.my-work img {
-  max-height: 200px;
-}
-
-.contact img {
-  max-height: 200px;
-}
-
-.about-me h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.my-work h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.contact h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.footer {
-  padding: 30px;
-  clear: both;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.my-work-text {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;  
+  justify-content: center;
+  overflow-wrap: break-word;
   text-align: center;
 }
 
-.footer h2 {
-  font-size: 20px;
+.my-work-container p {
+  margin-left: auto;
+}
+
+
+.horiseon-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.horiseon-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border-radius: 1%;
+}
+
+.horiseon-image:hover {
+  border: black 2px solid;
+}
+
+.image-holder p {
+  margin-left: auto;
+  inline-size: 500px;
+  overflow-wrap: break-word;
+}
+
+.coming-soon-container {
+  width: 100%;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.coming-soon-container p {
+  margin-left: auto;
+  inline-size: 200px;
+  overflow-wrap: break-word;
+}
+
+.coming-soon-image {
+  border: 5px solid sunflower;
+}
+
+
+.coming-soon-image:hover {
+  border: 5px solid black;
+}
+
+.coming-soon {
+flex: 1;
+background-color: rgb(190, 174, 168);
+padding: 50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.empty-place {
+  margin-left: 10px;
+}
+
+.empty-place > img {
+  width: 100%;
+}
+
+.contact-me-container {
+  text-align: center;
+  color: var (--black); 
+  height: 400px;
+  background-color: var (--sunflower);
+}
+
+.contact-me-text {
+  margin: 10px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;  
+}
+
+
+.linkedin,{
+width: 45px;
+border-radius: 10%;
+}
+
+.linkedin-logo:hover,
+ {
+  border: 5px black solid;
+}
+
+footer {
+  background-color: var (--sunflower);
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+.about-me-flex {
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+@media screen and (max-width: 768px) {
+.my-work-container {
+flex-direction: column;
+align-items: center;
+}
+  
+}
+
+@media screen and  (max-width: 768px ) {
+.contact-me-container {
+  flex-direction: column;
+}
+  
 }
