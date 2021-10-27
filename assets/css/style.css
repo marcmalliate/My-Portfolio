@@ -8,10 +8,20 @@
   --sunflower:rgb(251, 245, 192);
   --black: black;
 }
+.jumbotron {
+  font-family: 'Merriweather', serif;
+text-align: center;
+background-color:lightyellow;
+color: wheat;
+border-radius: 0;
+align-items: center;
+
+}
 
 body {
   line-height: 1.5;
-  background-color: var(--sunflower);
+  background-color: lightyellow;
+
 }
 
 p { 
@@ -19,7 +29,7 @@ p {
   color: var (--black); 
   margin-bottom: 20px;
   font-weight: lighter;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Merriweather', serif;
 }
 
 /*This is the heading section of the webpage*/
@@ -28,9 +38,12 @@ header {
   text-align: center;
   color:black; 
   font-size: 50px;
-  font-family: Impact, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 
+  font-family: 'Merriweather', serif;
   display: grid;
-  background-color: var (--sunflower);
+  background-color: grey;
+}
+.nav-bar {
+  background-color: rgb(224, 224, 211);
 }
 
 /*This is my navigation bar or menu*/
@@ -49,7 +62,7 @@ nav a {
   padding: 14px 16px;
   font-size: 30px;
   font-weight: lighter;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Merriweather', serif;
   display: flex;
 }
 
@@ -67,7 +80,7 @@ h1 {
 
 h2 {
 font-weight: lighter;
-font-family: Impact, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Merriweather', serif;
 padding-top: 24px;
 }
 
@@ -81,7 +94,7 @@ h3 {
 h4 {
 font-size:56px;
 font-weight: lighter;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Merriweather', serif;
 font-size:56px;
 padding-top: 24px;
 justify-content: center;
@@ -89,14 +102,14 @@ justify-content: center;
 
 h5 {
   font-weight: lighter;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 20px;
   padding-top: 24px;
 }
 
 h6 {
   font-weight: lighter;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 25px;
   padding-top: 24px;
 }
@@ -104,7 +117,7 @@ h6 {
 
 .about-me-flex {
   display: flex;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 16px;
   padding-top: 20px;
   padding-right: 100px;
@@ -129,14 +142,14 @@ h6 {
   text-align: center;
   color: var (--black); 
   height: 700px;
-  background-color:wheat;
+  background-color:rgb(221, 208, 186);
 }
 
 
 }
 
 .my-work-text {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Merriweather', serif;
   font-weight: lighter;
   font-size: 40px;  
   justify-content: center;
@@ -148,15 +161,19 @@ h6 {
   margin-left: auto;
 }
 
+.btn-primary {
+  background-color: rgb(195, 195, 195);
+  border: lightgray;
+}
 
-.horiseon-flex {
+.project-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.horiseon-image {
+.marvelous-memes-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +181,7 @@ h6 {
   border-radius: 1%;
 }
 /* Makes a black border appear when you hover the pointer over the picture. */
-.horiseon-image:hover {
+.marvelous-memes-image:hover {
   border: black 2px solid;
 }
 
@@ -174,19 +191,31 @@ h6 {
   overflow-wrap: break-word;
 }
 
-.coming-soon-container {
+
+
+.other-projects-container {
   width: 100%;
   display: flex;
   padding-bottom: 50px;
+  background-color: rgb(221, 208, 186);
 }
 
-.coming-soon-container p {
+.other-projects-container p {
  
   inline-size: 200px;
   overflow-wrap: break-word;
 }
 
-.coming-soon-image {
+.project-2-image {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  border-radius: 4%;
+  text-align: center;
+}
+
+.project-3-image {
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -196,13 +225,18 @@ h6 {
 }
 
 
-.coming-soon-image:hover {
+.project-2-image:hover {
   border: 4px solid rgb(255, 252, 252);
 }
 
-.coming-soon {
+.project-3-image:hover {
+  border: 4px solid rgb(255, 252, 252);
+}
+
+
+.projects {
 flex: 1;
-background-color:wheat;
+background-color: rgb(221, 208, 186);
 padding: 50px;
 display: flex;
 flex-wrap: wrap;
@@ -228,7 +262,7 @@ align-items: center;
 
 .contact-me-text {
   margin: 10px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Merriweather', serif;
   font-weight: lighter;
   font-size: 20px;  
 }
@@ -248,7 +282,7 @@ footer {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* Media queries to make different style rules*/
+/* Media queries to make different sizing rules*/
 
 
 @media screen and (max-width: 768px) {
@@ -271,4 +305,28 @@ align-items: center;
   flex-direction: column;
 }
   
+}
+
+  /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+#header {
+      font-size: 4em;
+      image-rendering: auto;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #header  {
+      font-size: 6em;
+      image-rendering: auto;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #header  {
+      font-size: 8em;
+      image-rendering: auto;
+  }
 }

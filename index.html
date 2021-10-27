@@ -5,17 +5,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <title>Marc Malliate's Portfolio</title>
 </head>
 
 <body>
+  <!-- Jumbotron to display banner -->
+  <div id="header" class="jumbotron jumbotron-fluid text-container">
+    <h1 class="display-3">
+      <img src="assets/images/Jumbotron.png" alt="site logo" style="max-height: 300px">
+    </h1>
+  </div>
 
-
-  <header>
-    <h1> Marc Malliate's Portfolio </h1>
-  </header>
-
+  <!--Nav Bar-->
   <nav class="nav-bar">
     <a href="#aboutme" class="menu-item"> About Me </a>
     <a href="#mywork" class="menu-item"> My Work So Far </a>
@@ -24,7 +38,7 @@
   </nav>
   <main>
 
-
+    <!-- About Me container-->
     <div id="aboutme" class="about-me-container">
 
       <div class="about-me-flex">
@@ -37,7 +51,7 @@
         <p>
           Heya, <br>
           <br>
-          I'f you're looking for Marc's web-development portfolio then you've come to the right place. <br>
+          If you're looking for Marc's web-development portfolio then you've come to the right place. <br>
           <br>
           This is the space where you can check out all the projects I've been working on and learn a little bit more
           about me.
@@ -48,7 +62,8 @@
           <br>
           Currently, I'm spending my days expanding my knowledge of web-development and coding at Adelaide University.
           <br>
-          I'm excited to put my skills into practice. <br>
+          I'm excited to put my skills into practice.
+          <br>
           Before you check out the rest of my portfolio, I'll leave you with my favourite quote...<br>
           <br>
           "Life begins at the edge of your comfort zone."
@@ -62,43 +77,50 @@
 
     </div>
 
-
+    <!-- My Work Container-->
     <div id="mywork" class="my-work-container">
       <h2> My Work </h2>
-      <div class="horiseon-flex">
-        <h5> This is the first project I have worked on. </h5>
+      <div class="project-flex">
+        <h5> This is the first collaborative project I have worked on. </h5>
         <section class="image-holder">
-          <h6> Debugging the Horiseon webpage. </h6>
-          <div class="horiseon-image">
+          <h6> Marvelous Memes. </h6>
+          <div class="feature-project">
 
-            <a href="">
-              <img src="assets/images/Marketing Mock up.png" class="horiseon-image"> </a>
+            <a href="https://marcmalliate.github.io/Collaborative-Project/index.html">
+              <img src="assets/images/MM1.png" class="marvelous-memes-image"> </a>
           </div>
-          <p> The brief for this project was to debug existing code to ensure the web page functioned effectively as
-            well as clean up
-            the CSS code where necessary.</p>
+          <p> This project uses two third party APIs and is responsive, clean and has a mobile first design.</p>
+          <a class="btn btn-primary" href="https://github.com/marcmalliate/Collaborative-Project" role="button">Github
+            Link</a>
 
         </section>
 
       </div>
     </div>
 
-    <section class="coming-soon-container">
-      <div class="coming-soon">
-        <h3> My Next Project </h3>
-        <a> <img src="assets/images/coming-soon.jpeg" class="coming-soon-image">
+    <section class="other-projects-container">
+      <div class="projects">
+        <h3> This is a Weather Dashboard application </h3>
+        <a href="https://marcmalliate.github.io/Weather-Dashboard/#">
+          <img src="assets/images/weather-dashboard.png" class="project-2-image">
         </a>
-        <p> Come back soon and you'll see my second project here.  </p>
-        </div>
-       
-        <div class="coming-soon">
-          <h3> My Next Next Project </h3>
-          <a> <img src="assets/images/coming-soon.jpeg" class="coming-soon-image">
-          </a>
-          <p> Come back a third time and you find might find another project here. 
+        <p> It uses the Open Weather one call API. </p>
+        <a class="btn btn-primary" href="https://github.com/marcmalliate/Weather-Dashboard" role="button">Github
+          Link</a>
 
-          </p>
-        </div>
+      </div>
+
+      <div class="projects">
+        <h3> This project is a daily work scheduler </h3>
+        <a href="https://marcmalliate.github.io/Third-Party-APIs/">
+          <img src="assets/images/work-day-scheduler.png" class="project-3-image">
+
+        </a>
+        <p> It uses a third party API.
+          <a class="btn btn-primary" href="https://github.com/marcmalliate/Third-Party-APIs" role="button">Github
+            Link</a>
+        </p>
+      </div>
 
     </section>
 
@@ -106,7 +128,7 @@
 
     </div>
 
-
+    <!-- Contact Me container-->
     <div id="contactme" class="contact-me-container">
       <h4> Contact Me </h4>
 
@@ -122,7 +144,10 @@
           </a>
 
           <br>
-
+          <br>
+          You can also view my resume <br>
+          <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEuDjeIKic&#x2F;view?utm_content=DAEuDjeIKic&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+            target="_blank" rel="noopener">Marcus Malliaté - Full Stack Developer Resume </a>
         </div>
 
       </section>
@@ -131,13 +156,24 @@
 
 
   </main>
-
+  <!--Footer-->
   <footer>
     Thanks for stopping by!
 
   </footer>
 
 
-
+  <!--SCRIPTS-->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- Custom Script -->
+  <script src="assets/script.js"></script>
 
 </body>
