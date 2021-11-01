@@ -1,7 +1,7 @@
 # Marc Malliate's Portfolio
 
 ## About this Assignment
-This website will showcase my work that I produce over the duration of this course. So far I have only used HTML and CSS. This webpage will improve as my skills and knowledge grows.
+This website will showcase my work that I produce over the duration of this course.  This webpage will improve as my skills and knowledge grows.
 
 So far it has the following features:
 1. My new, a recent photo of me and links to sections about me, my work and my contact details.
@@ -15,9 +15,9 @@ The github repository contains application code, has a unique name and follow be
 
 ### Screenshots:
 
-<img src="/Users/marcmalliate/BootCamp/Homework/02 Advanced CSS: Portfolio/portfolio/assets/screenshots/Screen Shot 2021-09-16 at 8.15.47 am.png">
+![This is my Portfolio](assets/images/portfolioscreenshot.png)
+![This is my Portfolio continued.](assets/images/portfolioscreenshot2.png)
 
-<img src="/Users/marcmalliate/BootCamp/Homework/02 Advanced CSS: Portfolio/portfolio/assets/screenshots/Screen Shot 2021-09-16 at 8.16.16 am.png">
 
 
 
