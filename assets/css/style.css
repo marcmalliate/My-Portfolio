@@ -142,7 +142,7 @@ h6 {
   text-align: center;
   color: var (--black); 
   height: 700px;
-  background-color:rgb(221, 208, 186);
+  background-color:rgb(224, 224, 211);
 }
 
 
@@ -197,7 +197,7 @@ h6 {
   width: 100%;
   display: flex;
   padding-bottom: 50px;
-  background-color: rgb(221, 208, 186);
+  background-color: rgb(224, 224, 211);
 }
 
 .other-projects-container p {
@@ -236,7 +236,7 @@ h6 {
 
 .projects {
 flex: 1;
-background-color: rgb(221, 208, 186);
+background-color: rgb(224, 224, 211);
 padding: 50px;
 display: flex;
 flex-wrap: wrap;
@@ -257,7 +257,7 @@ align-items: center;
   text-align: center;
   color: var (--black); 
   height: 400px;
-  background-color: var (--sunflower);
+  background-color: rgb(224, 224, 211);
 }
 
 .contact-me-text {
@@ -275,7 +275,7 @@ align-items: center;
 }
 
 footer {
-  background-color: var (--sunflower);
+  background-color: rgb(224, 224, 211);
   padding: 20px;
   text-align: center;
   font-size: 20px;
